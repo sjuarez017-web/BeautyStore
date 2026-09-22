@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Store | Recolección</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="auth-page">
+  <nav class="navbar navbar-expand-lg beauty-nav">
+    <div class="container">
+      <a class="navbar-brand beauty-logo" href="recoleccion.html">BEAUTY<span>STORE</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="recoleccion.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="seleccion.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="compra.html">Carrito <span class="cart-badge" id="navCartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="auth-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="eyebrow">TU BELLEZA, TU ESTILO</p>
+          <h1>Todo lo que necesitas para <span>sentirte increíble.</span></h1>
+          <p class="hero-text">Descubre maquillaje, encuentra tus favoritos y crea una experiencia de compra sencilla y personalizada.</p>
+          <a href="#accessCard" class="btn beauty-btn">Comenzar</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="access-card" id="accessCard">
+            <div class="brand-mini">BEAUTY STORE</div>
+            <h2 id="formTitle">Bienvenida</h2>
+            <p class="muted">Crea una cuenta o inicia sesión para continuar.</p>
+
+            <div class="switcher">
+              <button class="switch-btn active" id="loginTab" type="button">Iniciar sesión</button>
+              <button class="switch-btn" id="registerTab" type="button">Crear cuenta</button>
+            </div>
+
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="loginEmail" placeholder="correo@ejemplo.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="••••••••" required>
+              </div>
+              <button class="btn beauty-btn w-100" type="submit">Entrar</button>
+            </form>
+
+            <form id="registerForm" class="d-none">
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="fullName" required>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Correo</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="address" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" minlength="6" required>
+              </div>
+              <button class="btn beauty-btn w-100" type="submit">Crear cuenta y entrar</button>
+            </form>
+            <div id="authMessage" class="small mt-3 text-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">© 2026 Beauty Store · Proyecto académico</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Store | Selección</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg beauty-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand beauty-logo" href="recoleccion.html">BEAUTY<span>STORE</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="recoleccion.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="seleccion.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link cart-link" href="compra.html">🛒 Carrito <span class="cart-badge" id="navCartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="catalog-header">
+    <div class="container">
+      <p class="eyebrow">BEAUTY COLLECTION</p>
+      <h1>Encuentra tus <span>favoritos</span></h1>
+      <p>Explora nuestra selección de productos para rostro, ojos y labios.</p>
+      <div class="search-box mx-auto">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Busca un producto...">
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="category-bar">
+      <button class="category-btn active" data-category="todos">Todos</button>
+      <button class="category-btn" data-category="Rostro">Rostro</button>
+      <button class="category-btn" data-category="Ojos">Ojos</button>
+      <button class="category-btn" data-category="Labios">Labios</button>
+    </div>
+
+    <div id="apiStatus" class="api-status">Catálogo cargado. Integración RESTful preparada.</div>
+    <div id="productGrid"></div>
+    <div id="emptyProducts" class="empty-state d-none">No encontramos productos con esa búsqueda.</div>
+  </main>
+
+  <div class="floating-cart">
+    <a href="compra.html" class="floating-cart-btn">🛒 <span id="floatingCartCount">0</span></a>
+  </div>
+
+  <footer class="site-footer">© 2026 Beauty Store · Proyecto académico</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
